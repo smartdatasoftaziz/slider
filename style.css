@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: #313233;
+  color: #fefefe;
+}
+
+.swiper-slide {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-counter {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1;
+  min-width: 60px;
+  padding: 6px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  background: rgba(255, 0, 0, 0.4);
+  color: white;
+}
+
+.swiper-container {
+  height: 30vh;
+}
+
+* + .swiper-container {
+  border-top: 1px solid rgba(255, 0, 0, 0.4);
+}
